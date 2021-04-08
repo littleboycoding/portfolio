@@ -23,22 +23,8 @@ import {
   ContactStyled,
   SkillStyled,
   ProjectStyled,
+  AwardStyled,
 } from "../components/sections";
-
-const Container = styled.div`
-  font-family: Kanit;
-  width: 70%;
-  margin: 0 auto;
-
-  @media (max-width: 800px) {
-    width: 100%;
-    padding: 10px;
-  }
-
-  @media (min-width: 2560px) {
-    width: 60%;
-  }
-`;
 
 const MyPicture = styled.img`
   border: 1px solid white;
@@ -101,10 +87,9 @@ const HeadStyled = styled.header`
 
 export default function Home() {
   return (
-    <Container>
+    <>
       <Head>
         <title>Thanawat.dev</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <HeadStyled>
         <MyPicture src="/profile.jpg" />
@@ -115,15 +100,21 @@ export default function Home() {
           ☕ และ Lo-Fi 🎵 มาก ๆ
         </Intro>
         <NavigatorGroup>
-          <Button color="#3b5998">
-            Facebook <FontAwesomeIcon icon={faFacebook} />
-          </Button>
-          <Button color="#000">
-            GitHub <FontAwesomeIcon icon={faGithub} />
-          </Button>
-          <Button color="#c03221">
-            Blog <FontAwesomeIcon icon={faBlogger} />
-          </Button>
+          <a href="https://www.facebook.com/littleboycoding/">
+            <Button color="#3b5998">
+              Facebook <FontAwesomeIcon icon={faFacebook} />
+            </Button>
+          </a>
+          <a href="https://github.com/littleboycoding">
+            <Button color="#000">
+              GitHub <FontAwesomeIcon icon={faGithub} />
+            </Button>
+          </a>
+          <a href="https://littleboycoding.github.io">
+            <Button color="#c03221">
+              Blog <FontAwesomeIcon icon={faBlogger} />
+            </Button>
+          </a>
         </NavigatorGroup>
       </HeadStyled>
       <AboutStyled />
@@ -131,6 +122,8 @@ export default function Home() {
       <SkillStyled />
       <ProjectStyled />
       <ContactStyled />
-    </Container>
+    </>
   );
 }
+
+export { Button };

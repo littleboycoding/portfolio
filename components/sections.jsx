@@ -209,13 +209,13 @@ function ProjectStyled() {
           img="/kilogram_exam2.png"
           title="Kilogram Exam"
           info="โปรแกรมตรวจข้อสอบด้วยระบบสแกนนิ่ง"
-          link="/kilogram_exam"
+          link="/project/kilogram_exam"
         />
         <CardStyled
           img="/write_letter.png"
           title="Write Letter"
           info="เว็บบริการบอร์ดสำหรับพูดคุย แบบเสรี"
-          link="/write_letter"
+          link="/project/write_letter"
         />
         <CardStyled
           img="https://via.placeholder.com/500"
@@ -380,7 +380,7 @@ const Award = styled.section`
 
 function AwardStyled() {
   return (
-    <section>
+    <Award>
       <h2>รางวัล 🏆</h2>
       <ImageContainer>
         {/* <div className="instruction"></div> */}
@@ -414,7 +414,7 @@ function AwardStyled() {
           รางวัลรองชนะเลิศอันดับสามระดับชาติ สิ่งประดิษฐ์คนรุ่นใหม่ ประจำปี 2020
         </li>
       </ul>
-    </section>
+    </Award>
   );
 }
 
