@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "../styles/globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -24,6 +25,22 @@ const Container = styled.div`
 `;
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    async function gtagImport() {
+      await import("../components/gtag");
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ECVQHTTS6Q");
+    }
+
+    gtagImport();
+  }, []);
+
   return (
     <Container>
       <Head>

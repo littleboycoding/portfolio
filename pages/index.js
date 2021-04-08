@@ -40,10 +40,13 @@ const SlideIn = keyframes`
 const MyPicture = styled.img`
   border: 1px solid white;
   width: calc(15vw + 5vh);
+  height: calc(15vw + 5vh);
   min-width: 175px;
+  min-height: 175px;
   margin: 20px;
   box-shadow: 10px 10px 0px 0px black;
   opacity: 0;
+  object-fit: cover;
 
   background-color: black;
 
