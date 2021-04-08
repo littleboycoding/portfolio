@@ -70,7 +70,7 @@ const Skill = styled.section`
 
 const CardContainer = styled.div`
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 `;
 
@@ -84,7 +84,7 @@ const Card = styled.div`
     border: 1px solid black;
     box-shadow: 3px 3px 0 0 black;
     transition: all 0.1s;
-    padding: 5% 5%;
+    padding: 3% 3%;
   }
 
   transition: all 0.1s;
@@ -206,23 +206,27 @@ function ProjectStyled() {
       <h2>โปรเจค 📚</h2>
       <CardContainer>
         <CardStyled
-          img="/kilogram_exam2.png"
+          img="/portfolio/kilogram_exam2.png"
           title="Kilogram Exam"
           info="โปรแกรมตรวจข้อสอบด้วยระบบสแกนนิ่ง"
           link="/project/kilogram_exam"
         />
         <CardStyled
-          img="/write_letter.png"
+          img="/portfolio/write_letter.png"
           title="Write Letter"
           info="เว็บบริการบอร์ดสำหรับพูดคุย แบบเสรี"
           link="/project/write_letter"
         />
-        <CardStyled
-          img="https://via.placeholder.com/500"
-          title="Placeholder"
-          info="Placeholder"
-          link="/placeholder"
-        />
+        {/* <CardStyled */}
+        {/*   img="https://via.placeholder.com/500" */}
+        {/*   title="Placeholder" */}
+        {/*   info="Placeholder" */}
+        {/*   link="https://github.com/littleboycoding" */}
+        {/* /> */}
+        {/* <Card> */}
+        {/*   <img src="https://via.placeholder.com/500" /> */}
+        {/*   <h1>โปรเจคทั้งหมด</h1> */}
+        {/* </Card> */}
       </CardContainer>
     </Project>
   );
@@ -235,7 +239,7 @@ function CardStyled({ link, img, title, info }) {
         <img src={img} alt={"screenshot " + title} />
         <h2>{title}</h2>
         <p>{info}</p>
-        <p class="link">อ่านรายละเอียด</p>
+        <p className="link">อ่านรายละเอียด</p>
       </Card>
     </Link>
   );
@@ -396,7 +400,7 @@ function AwardStyled() {
           src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.6435-9/87028982_1842948219171734_2853093487073558528_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=RpQSMNqA9PkAX_ikYRd&_nc_ht=scontent.fbkk5-7.fna&oh=82ea2bfecd14e766cc867fc0abba4af8&oe=60917EDA"
           alt="reward"
         />
-        <img src="/award.png" alt="reward" />
+        <img src="/portfolio/award.png" alt="reward" />
       </ImageContainer>
       <p>
         ได้มีโอกาสเป็นตัวแทนเข้าแข่งขันทักษะด้านคอมพิวเตอร์ เช่น การสร้างเกม

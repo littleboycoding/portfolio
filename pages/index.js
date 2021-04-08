@@ -26,16 +26,33 @@ import {
   AwardStyled,
 } from "../components/sections";
 
+const SlideIn = keyframes`
+  from {
+    margin-left: -100px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+  `;
+
 const MyPicture = styled.img`
   border: 1px solid white;
   width: calc(15vw + 5vh);
   min-width: 175px;
   margin: 20px;
   box-shadow: 10px 10px 0px 0px black;
+  opacity: 0;
+
+  background-color: black;
 
   @media (min-width: 2560px) {
     width: 15vw;
   }
+
+  animation: ${SlideIn} 1s;
+  animation-fill-mode: forwards;
 `;
 
 const Greet = styled.h1`
@@ -44,6 +61,11 @@ const Greet = styled.h1`
   font-size: calc(8px + 0.7vh + 1vw);
   color: white;
   transform: skew(-10deg) rotate(-2deg);
+
+  opacity: 0;
+  animation: ${SlideIn} 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 `;
 
 const Intro = styled.p`
@@ -54,10 +76,20 @@ const Intro = styled.p`
     font-size: 1em;
     width: 90%;
   }
+
+  opacity: 0;
+  animation: ${SlideIn} 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 `;
 
 const NavigatorGroup = styled.div`
   display: flex;
+
+  opacity: 0;
+  animation: ${SlideIn} 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 `;
 
 const Button = styled.button`
@@ -89,10 +121,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Thanawat.dev</title>
+        <title>Thanawat</title>
       </Head>
       <HeadStyled>
-        <MyPicture src="/profile.jpg" />
+        <MyPicture src="/portfolio/profile.jpg" />
         <Greet>Hello, I'm Thanawat Yodnil 🖐</Greet>
         <Intro>
           นักพัฒนาเว็บไซต์ Full-Stack

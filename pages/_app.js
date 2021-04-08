@@ -27,7 +27,21 @@ function MyApp({ Component, pageProps }) {
   return (
     <Container>
       <Head>
-        <link rel="icon" href="/profile.jpg" />
+        <link rel="icon" href="/portfolio/profile.jpg" />
+        <meta
+          property="og:url"
+          content="https://littleboycoding.github.io/portfolio"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Thanawat's Portfolio 🚀🔥💻👏" />
+        <meta
+          property="og:description"
+          content="เว็บไซต์แนะนำตัวของ นายธณวัฒน์ ยอดนิล"
+        />
+        <meta
+          property="og:image"
+          content="https://littleboycoding.gitihub.io/portfolio/thumbnail.jpg"
+        />
       </Head>
       <Component {...pageProps} />
     </Container>

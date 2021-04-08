@@ -79,12 +79,15 @@ function Main() {
   return (
     <>
       <Head>
-        <title>Thanawat.dev - Kilogram Exam</title>
+        <title>Thanawat - Kilogram Exam</title>
       </Head>
       <Link href="/">
         <ButtonStyled color="black">กลับหน้าหลัก</ButtonStyled>
       </Link>
-      <Thumbnail src="/kilogram_exam2.png" alt="kilogram exam screenshot" />
+      <Thumbnail
+        src="/portfolio/kilogram_exam2.png"
+        alt="kilogram exam screenshot"
+      />
       <h1>Kilogram Exam</h1>
       <p>
         โปรแกรมตรวจข้อสอบด้วยระบบสแกนนิ่ง (ผ่านกล้องโทรศัพท์มือถือ)
@@ -161,7 +164,7 @@ function Main() {
           <Figure>
             <img
               alt="Document crop function"
-              src="/kilogram_exam_prototype1.png"
+              src="/portfolio/kilogram_exam_prototype1.png"
             />
             <figcaption>ฟังก์ชั่น Crop กระดาษ</figcaption>
           </Figure>
@@ -169,11 +172,11 @@ function Main() {
       </Section>
       <Section>
         <h2>สิ่งที่ได้เรียนรู้</h2>
-        <p>
-          โปรเจคนี้ทำให้ได้ความรู้ด้านการใช้งาน OpenCV
-          ทำให้เข้าใจโครงสร้างเว็บแอพด้วย React มากขึ้น และได้มีประสบการณ์ใช้งาน
-          Google Drive API ด้วย
-        </p>
+        <ul>
+          <li>ความรู้ด้านการใช้งาน OpenCV</li>
+          <li>ทำให้เข้าใจโครงสร้างเว็บแอพด้วย React มากขึ้น</li>
+          <li>ประสบการณ์ใช้งาน Google Drive API</li>
+        </ul>
       </Section>
       <ProjectStyled />
       <ContactStyled />

@@ -80,12 +80,15 @@ function Main() {
   return (
     <>
       <Head>
-        <title>Thanawat.dev - Write Letter</title>
+        <title>Thanawat - Write Letter</title>
       </Head>
       <Link href="/">
         <ButtonStyled color="black">กลับหน้าหลัก</ButtonStyled>
       </Link>
-      <Thumbnail src="/write_letter.png" alt="write letter screenshot" />
+      <Thumbnail
+        src="/portfolio/write_letter.png"
+        alt="write letter screenshot"
+      />
       <h1>Write Letter</h1>
       <p>
         เว็บบอร์ดสำหรับพูดคุยแบบเสรี
@@ -125,17 +128,23 @@ function Main() {
       <Section>
         <h2>จุดเริ่มต้น/แรงบันดาลใจ</h2>
         <p>
-          โปรเจคนี้สร้างเพื่อส่งเข้าแข่ง DigitalOcean Hackathon
-          ในตอนนั้นมีความตั้งใจที่จะลองใช้ React + Apollo + MongoDB ด้วย
+          โปรเจคนี้สร้างเพื่อส่งเข้าแข่ง DigitalOcean Hackathon{" "}
+          <Link
+            target="_blank"
+            href="https://dev.to/littleboycoding/write-letter-submission-digitalocean-app-platform-hackathon-571k"
+          >
+            รายละเอียด
+          </Link>{" "}
+          ในตอนนั้นมีความตั้งใจที่จะลองใช้ React + Apollo + MongoDB อยู่แล้วด้วย
         </p>
         <p>
           จุดเริ่มต้นคือ พักหลังมารู้สึกว่า Social Network
           ปัจจุบันไม่ค่อยเป็นมิตรเท่าไหร่
-          ผมเลยสร้างเว็บแอพนี้ขึ้นมาเพื่อแก้ไขปัญหานั้น
+          ผมเลยตัดสินใจสร้างเว็บแอพนี้ขึ้นมาเพื่อแก้ไขปัญหาเหล่านั้น
         </p>
         <p>
           โดยข้อแตกต่างที่สำคัญที่สุดคือ ในบริการนี้จะเป็นนิรนาม
-          ไม่จำเป็นต้องลงชื่อก็สามารถใช้ได้เลย และอีกความสามารถนึงคือ
+          ไม่จำเป็นต้องลงชื่อก็สามารถใช้ได้เลย และอีกความสามารถคือ
           ส่งข้อความแบบสุ่ม ๆ ซึ่งจะมีเพียงคนเดียวที่ได้รับ
           และนั่นเป็นที่มาของแอพนี้ครับ
         </p>
@@ -156,18 +165,24 @@ function Main() {
             </p>
           </span>
           <Figure>
-            <img alt="Commenting" src="/write_letter_prototype1.png" />
+            <img
+              alt="Commenting"
+              src="/portfolio/write_letter_prototype1.png"
+            />
             <figcaption>แสดงความคิดเห็น</figcaption>
           </Figure>
         </Development>
       </Section>
       <Section>
         <h2>สิ่งที่ได้เรียนรู้</h2>
-        <p>
-          ได้เรียนรู้การใช้งาน Apollo, MongoDB การใช้งาน React + Apollo
-          การใช้งาน Theme API ของ Styled-components เพื่อทำโหมด Light/Dark
-          ฝึกการใช้งาน DigitalOcean
-        </p>
+        <ul>
+          <li>ได้เรียนรู้การใช้งาน Apollo, MongoDB</li>
+          <li>การใช้งาน React + Apollo</li>
+          <li>
+            การใช้งาน Theme API ของ Styled-components เพื่อทำโหมด Light/Dark
+          </li>
+          <li>ได้ลองใช้งาน DigitalOcean App Platform</li>
+        </ul>
       </Section>
       <ProjectStyled />
       <ContactStyled />
