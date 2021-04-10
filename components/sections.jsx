@@ -60,8 +60,6 @@ const Skill = styled.section`
   margin-top: 100px;
 
   @media (max-width: 800px) {
-    margin-top: 0;
-
     span {
       grid-column: 1 / 1;
     }

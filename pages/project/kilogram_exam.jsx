@@ -9,6 +9,7 @@ import { Button } from "../index";
 const Thumbnail = styled.img`
   width: 100%;
   // height: 50vh;
+  max-height: 55vh;
   background-color: #ddd;
   padding: 15px;
   object-fit: contain;
@@ -66,7 +67,7 @@ const Section = styled.section`
 `;
 
 const ButtonStyled = styled(Button)`
-  @media (min-width: 1024px) {
+  @media (min-width: 1246px) {
     position: fixed;
     left: 50px;
     top: 50px;
