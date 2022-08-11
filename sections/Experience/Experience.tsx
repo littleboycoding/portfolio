@@ -25,7 +25,7 @@ const Experience = () => {
       <VStack spacing="1em">
         <VStack>
           <Heading id="experience">{"Experience"}</Heading>
-          <Text fontSize={["sm", null, "md"]} color="grey">
+          <Text fontSize={["sm", null, "md"]} color="#5e5e5e">
             {"Projects, Competitions, Certificates"}
           </Text>
         </VStack>

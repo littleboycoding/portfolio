@@ -20,16 +20,19 @@ const Contact = () => {
             faIcon={faGithub}
             label="@littleboycoding"
             href="https://github.com/littleboycoding"
+	    title="GitHub"
           />
           <SocialButton
             faIcon={faFacebook}
             label="Thanawat Yodnil"
             href="https://facebook.com/littleboycoding"
+	    title="Facebook"
           />
           <SocialButton
             faIcon={faEnvelope}
             label="littleboycoding@gmail.com"
             href="mailto:littleboycoding@gmail.com"
+	    title="Email"
           />
         </HStack>
       </VStack>

@@ -6,14 +6,16 @@ const SocialButton = ({
   faIcon,
   label,
   href,
+  title,
 }: {
   faIcon: IconDefinition;
   label: string;
   href: string;
+  title: string;
 }) => {
   return (
     <Tooltip label={label}>
-      <Link href={href} target="_blank">
+      <Link href={href} isExternal>
         <AspectRatio
           p="1em"
           borderRadius="0.3em"
@@ -25,7 +27,7 @@ const SocialButton = ({
           }}
         >
           <Box>
-            <FontAwesomeIcon icon={faIcon} />
+            <FontAwesomeIcon title={title} icon={faIcon} />
           </Box>
         </AspectRatio>
       </Link>

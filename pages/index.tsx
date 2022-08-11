@@ -16,6 +16,10 @@ const Index = () => {
         <meta name="theme-color" content="#1e1e1e" />
         <meta property="og:title" content="Thanawat's Portfolio" />
         <meta
+          name="description"
+          content="Homepage of Thanwat's portfolio"
+        />
+        <meta
           property="og:description"
           content="Homepage of Thanwat's portfolio"
         />

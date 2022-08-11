@@ -67,7 +67,7 @@ const Skill = () => {
     <Section bg="#f3f3f3" pos="relative">
       <VStack>
         <Heading id="skill">Skill set</Heading>
-        <Text fontSize={["sm", null, "md"]} pb="1em" color="grey">
+        <Text fontSize={["sm", null, "md"]} pb="1em" color="#5e5e5e">
           {"Skill set and tooling that I am experienced"}
         </Text>
         <Grid
