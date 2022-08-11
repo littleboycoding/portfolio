@@ -26,7 +26,7 @@ const Experience = () => {
         <Heading fontSize="lg">{"Projects / Works"}</Heading>
         <SimpleGrid spacing={4} columns={[1, 2]}>
           <Project
-            image={kilogramExam.src}
+            image={kilogramExam}
             imageAlt="kilogram exam"
             title="Kilogram Exam"
             repository="https://github.com/littleboycoding/kilogram-exam-desktop"
@@ -48,7 +48,7 @@ const Experience = () => {
             </Text>
           </Project>
           <Project
-            image={writeLetter.src}
+            image={writeLetter}
             imageAlt="write letter"
             title="Write Letter"
             repository="https://github.com/littleboycoding/write_letter"
@@ -73,22 +73,22 @@ const Experience = () => {
         <Heading fontSize="lg">{"Competitions / Certificates"}</Heading>
         <SimpleGrid spacing={4} columns={[1, 2, null, 4]}>
           <Award
-            image={award3.src}
+            image={award3}
             imageAlt="awarded since 2563"
             description="รองชนะเลิศอันดับสามสิ่งประดิษฐ์คนรุ่นใหม่ประจำปี 2563"
           />
           <Award
-            image={award2.src}
+            image={award2}
             imageAlt="awarded since 2562"
             description="ชนะเลิศการแข่งขันพัฒนาเว็บไซต์ระบบ E-Commerce ประจำปี 2562"
           />
           <Award
-            image={award1.src}
+            image={award1}
             imageAlt="awarded since 2561"
             description="ชนะเลิศการแข่งขันพัฒนาเว็บไซต์ระบบ E-Commerce ประจำปี 2561"
           />
           <Award
-            image={freeCodeCamp.src}
+            image={freeCodeCamp}
             imageAlt="freeCodeCamp certificate"
             description="ใบประกาศนียบัตรจบหลักสูตร Full Stack จาก freeCodeCamp"
           />

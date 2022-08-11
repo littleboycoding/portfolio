@@ -1,14 +1,8 @@
-import {
-  AspectRatio,
-  Box,
-  Heading,
-  VStack,
-  Image,
-  Link,
-} from "@chakra-ui/react";
+import { AspectRatio, Box, Heading, VStack, Link } from "@chakra-ui/react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InViewTransition from "../../components/InViewTransition";
+import Image, { StaticImageData } from "next/image";
 
 const Project = ({
   title,
@@ -19,7 +13,7 @@ const Project = ({
 }: {
   title: string;
   children: React.ReactNode;
-  image: string;
+  image: StaticImageData;
   imageAlt: string;
   repository: string;
 }) => {
@@ -27,7 +21,7 @@ const Project = ({
     <InViewTransition>
       <VStack alignItems="stretch" spacing="1em">
         <AspectRatio boxShadow="md" ratio={3 / 2} w="full">
-          <Image alt={imageAlt} src={image} />
+          <Image layout="fill" alt={imageAlt} src={image} objectFit="cover" />
         </AspectRatio>
         <Heading textAlign="center" fontSize="xl">
           {title}

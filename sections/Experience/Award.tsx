@@ -1,5 +1,6 @@
-import { AspectRatio, VStack, Text, Image } from "@chakra-ui/react";
+import { AspectRatio, VStack, Text } from "@chakra-ui/react";
 import InViewTransition from "../../components/InViewTransition";
+import Image, { StaticImageData } from "next/image";
 
 const Award = ({
   description,
@@ -7,14 +8,14 @@ const Award = ({
   imageAlt,
 }: {
   description: string;
-  image: string;
+  image: StaticImageData;
   imageAlt: string;
 }) => {
   return (
     <InViewTransition>
       <VStack spacing={4}>
         <AspectRatio boxShadow="md" ratio={3 / 2} w="full">
-          <Image alt={imageAlt} src={image} />
+          <Image layout="fill" alt={imageAlt} src={image} objectFit="cover" />
         </AspectRatio>
         <Text>{description}</Text>
       </VStack>
