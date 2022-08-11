@@ -90,7 +90,7 @@ const Skill = () => {
             >
               <Text>
                 {
-                  "พัฒนา API (RESTful, GraphQL, gRPC), สร้างระบบสื่อสารแบบเรียลไทม์ด้วย WebSocket, ทำงานกับฐานข้อมูลได้ (SQL, NoSQL)"
+                  "พัฒนา API (RESTful, GraphQL) สร้างระบบสื่อสารแบบเรียลไทม์ด้วย WebSocket, WebRTC ทำงานกับฐานข้อมูลได้ (SQL, NoSQL)"
                 }
               </Text>
               <Text color="grey" fontSize="0.9em">
@@ -116,7 +116,7 @@ const Skill = () => {
             >
               <Text>
                 {
-                  "พัฒนาเว็บแอปพลิเคชั่นด้วยไลบารี่อย่างเช่น  React, Vue, Svelte, คุ้นเคยกับเครื่องมืออย่าง Webpack, Vite, Rollup, สามารถพัฒนาแอปพลิเคชั่นด้วย Flutter และ Electron ได้"
+                  "พัฒนาเว็บแอปพลิเคชั่นด้วยไลบารี่อย่างเช่น  React, Vue, Svelte คุ้นเคยกับเครื่องมืออย่าง Webpack, Storybook สามารถพัฒนาแอปพลิเคชั่นด้วย Flutter และ Electron ได้"
                 }
               </Text>
               <Text color="grey" fontSize="0.9em">
@@ -125,7 +125,7 @@ const Skill = () => {
               <SkillExample>
                 <Text>React</Text>
                 <Text>Vue</Text>
-                <Text>Svelte</Text>
+                <Text>Storybook</Text>
                 <Text>Flutter</Text>
                 <Text>Electron</Text>
                 <Text>Webpack</Text>
