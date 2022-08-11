@@ -17,6 +17,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import InViewTransition from "../../components/InViewTransition";
 import Section from "../../components/Section";
+import SectionTitle from "../../components/Section/SectionTitle";
 
 const SkillExample = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -65,11 +66,11 @@ const SkillBlock = ({
 const Skill = () => {
   return (
     <Section bg="#f3f3f3" pos="relative">
-      <VStack>
-        <Heading id="skill">Skill set</Heading>
-        <Text fontSize={["sm", null, "md"]} pb="1em" color="#5e5e5e">
-          {"Skill set and tooling that I am experienced"}
-        </Text>
+      <VStack spacing="1em">
+        <SectionTitle
+          title="Skill set"
+          subtitle="Skill set and tooling that I am experienced"
+        />
         <Grid
           gap="1em"
           gridTemplateAreas={[

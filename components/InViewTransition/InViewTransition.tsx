@@ -9,7 +9,7 @@ import { IntersectionOptions, useInView } from "react-intersection-observer";
 const InViewTransition = ({
   style,
   children,
-  opt = { threshold: 0.2 },
+  opt = { threshold: 0.3 },
 }: {
   children: React.ReactNode;
   opt?: IntersectionOptions;

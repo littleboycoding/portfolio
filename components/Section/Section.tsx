@@ -9,10 +9,10 @@ const Section = ({
   expand?: boolean;
   container?: ContainerProps;
 }) => {
-  const isFill = useMemo(() => expand && { height: "100vh" }, [expand]);
+  const isExpand = useMemo(() => expand && { height: "100vh" }, [expand]);
 
   return (
-    <Box as="section" {...isFill} {...props}>
+    <Box as="section" {...isExpand} {...props}>
       <Container maxW="container.lg" h="full" py="5em" {...container}>
         {props.children}
       </Container>

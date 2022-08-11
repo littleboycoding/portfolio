@@ -14,16 +14,16 @@ const SocialButton = ({
   title: string;
 }) => {
   return (
-    <Tooltip label={label}>
+    <Tooltip label={label} bg="teal">
       <Link href={href} isExternal>
         <AspectRatio
           p="1em"
           borderRadius="0.3em"
           border="1px solid rgba(255, 255, 255, 0.2)"
           fontSize="1.5em"
-          bg="rgba(0, 0, 0, 0.8)"
+          bg="rgba(0, 128, 128, 0.2)"
           _hover={{
-            bg: "rgba(0, 0, 0, 0.2)",
+            bg: "rgba(0, 128, 128, 0.8)",
           }}
         >
           <Box>

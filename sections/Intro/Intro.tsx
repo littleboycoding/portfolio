@@ -6,37 +6,20 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 import Section from "../../components/Section";
 import me from "../../public/me.jpeg";
 
 const Intro = () => {
-  const [size, setSize] = useState("100vh");
-
-  useEffect(() => {
-    const onResize = () => {
-      setSize(innerHeight + "px");
-    };
-
-    onResize();
-
-    addEventListener("resize", onResize);
-
-    return () => {
-      removeEventListener("resize", onResize);
-    };
-  }, []);
-
   return (
-    <Section h={size} color="white">
+    <Section expand color="white">
       <Center h="full" w="full">
         <SlideFade in delay={0.5}>
-          <VStack alignItems="center" spacing="1em">
+          <VStack mt="-2em" alignItems="center" spacing="1em">
             <Image
               src={me.src}
               alt="profile picture"
               borderRadius="full"
-              w={[200, null, "xs"]}
+              w={["3xs", null, "2xs", "xs"]}
               boxShadow="xl"
             />
             <Heading>{"Thanawat Yodnil."}</Heading>

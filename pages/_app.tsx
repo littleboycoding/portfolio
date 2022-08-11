@@ -9,15 +9,9 @@ import StarParticles from "../components/StarParticles";
 
 config.autoAddCss = false;
 
-const theme = extendTheme({
-  config: {
-    initialColorMode: "light",
-  },
-});
-
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider>
       <StarParticles />
       <Component {...pageProps} />
     </ChakraProvider>

@@ -1,6 +1,9 @@
-import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+
+import Parallax from "../components/Parallax";
+import ParallaxLayer from "../components/Parallax/ParallaxLayer";
+import ParallaxSection from "../components/Parallax/ParallaxSection";
 
 const Intro = dynamic(() => import("../sections/Intro"));
 const Bio = dynamic(() => import("../sections/Bio"));
@@ -15,10 +18,7 @@ const Index = () => {
         <title>{"Thanawat's Portfolio"}</title>
         <meta name="theme-color" content="#1e1e1e" />
         <meta property="og:title" content="Thanawat's Portfolio" />
-        <meta
-          name="description"
-          content="Homepage of Thanwat's portfolio"
-        />
+        <meta name="description" content="Homepage of Thanwat's portfolio" />
         <meta
           property="og:description"
           content="Homepage of Thanwat's portfolio"
@@ -34,13 +34,25 @@ const Index = () => {
         />
         <link rel="icon" type="image/x-icon" href="/portfolio/favicon.ico" />
       </Head>
-      <Box position="relative">
-        <Intro />
-        <Bio />
-        <Skill />
-        <Experience />
-        <Contact />
-      </Box>
+      <Parallax perspective={1}>
+        <ParallaxSection>
+          <ParallaxLayer>
+            <Intro />
+          </ParallaxLayer>
+        </ParallaxSection>
+        <ParallaxSection>
+          <ParallaxLayer z={-0.8}>
+            <Bio />
+          </ParallaxLayer>
+        </ParallaxSection>
+        <ParallaxSection>
+          <ParallaxLayer>
+            <Skill />
+            <Experience />
+            <Contact />
+          </ParallaxLayer>
+        </ParallaxSection>
+      </Parallax>
     </>
   );
 };
