@@ -22,11 +22,11 @@ const Index = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://github.com/littleboycoding/portfolio"
+          content="https://littleboycoding.github.io/portfolio/"
         />
         <meta
           property="og:image"
-          content="https://github.com/littleboycoding/portfolio/me.jpeg"
+          content="https://littleboycoding.github.io/portfolio/me.jpeg"
         />
         <link rel="icon" type="image/x-icon" href="/portfolio/favicon.ico" />
       </Head>
